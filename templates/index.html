@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unseen Passage</title>
+    <link rel="stylesheet" href="../static/index.css" type="text/css">
+</head>
+<body>
+    <h1 class="heading">
+        Passage Solver
+    </h1>
+    <div class="main">
+
+        <div class="passage">
+            <form action="/" method="POST">
+
+                <h2 style="text-align: center">Write you unseen passage here</h2>
+                <textarea id="unseen_Pass" name="unseen_passage" type="text" placeholder="Your unseen passage goes here..."></textarea>
+
+
+                <h2 style="text-align: center">Write your first question here</h2>
+                <textarea name="ques_input" id="ques_input" cols="30" rows="3" placeholder="Your first question goes here..."></textarea>
+
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="output">
+            <h3 style="text-align: center">This was your Passwage</h3>
+            <h4 >{{passage}}</h4>
+            <h3 style="text-align: center" >This was your question</h3>
+            <h4>{{question}}</h4>
+            <h3 style="text-align: center">This is your answer</h3>
+            <h4>{{answer}}</h4>
+
+        </div>
+    </div>
+</body>
+</html>
